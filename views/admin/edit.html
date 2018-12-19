@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="/static/styles/style.css">
+    <title>Document</title>
+</head>
+<body>
+    {{#studentList}}
+
+    <form action="/admin/{{id}}?_method=PUT" method="POST">
+
+
+        <div class="row">
+                <div class="input-field col s6">
+                        <label for="name"></label><input type="text" name="name" value="{{name}}"></label>
+                        <label for="name">Name</label>
+                </div>
+
+                <div class="input-field col s6">
+                        <label for="email"></label><input type="text" name="email" value="{{email}}"></label>
+                        <label for="email">Email</label>
+                </div>
+
+                <div class="input-field col s6">
+                        <label for="phone"></label><input type="number" name="phone" value="{{phone}}"> </label>
+                        <label for="phone">Phone</label>
+                </div>
+
+                <div class="input-field col s6">
+                        <label for="mathematics"></label><<input type="number" name="mathematics" value="{{courseStudent.mathematics}}"></label>
+                        <label for="mathematics">Mathematics Grade</label>
+                </div>
+
+                <div class="input-field col s6">
+                    <label for="physics"></label><input type="number" name="physics" value="{{courseStudent.physics}}"></label>
+                    <label for="physics">Physics Grade</label>
+                </div>
+                    
+                <div class="input-field col s6">
+                    <label for="chemistry"></label><input type="number" name="chemistry" value="{{courseStudent.chemistry}}"></label>
+                    <label for="chemistry">Chemistry Grade</label>
+                </div>
+
+                <div class="input-field col s6">
+                    <label for="biology"></label><input type="number" name="biology" value="{{courseStudent.biology}}"></label>
+                    <label for="biology">Biology Grade</label>
+                </div>
+                        
+                <div class="input-field col s6">
+                    <label for="absence"></label><input type="number" name="absence" value="{{courseStudent.absence}}"></label>
+                    <label for="absence">Absence Day</label>     
+                </div>
+
+                <div class="input-field col s6">
+                        <label for="homework"></label><input type="number" name="homework" value="{{courseStudent.homework}}"></label>
+                        <label for="homework">Missing Homework</label>
+                </div>
+        </div>
+
+        <label for="student_id"><input type="hidden" name="student_id" value="{{courseStudent.student_id}}"></label>
+
+    <!-- <label for="name"> <input type="text" name="name" value="{{name}}"> </label>
+    <label for="email"> <input type="text" name="email" value="{{email}}"> </label>
+    <label for="phone"> <input type="number" name="phone" value="{{phone}}"> </label>
+
+    <br>
+    
+    <label for="mathematics"><input type="number" name="mathematics" value="{{courseStudent.mathematics}}"></label>
+    <label for="physics"><input type="number" name="physics" value="{{courseStudent.physics}}"></label>
+    <label for="chemistry"><input type="number" name="chemistry" value="{{courseStudent.chemistry}}"></label>
+    <label for="biology"><input type="number" name="biology" value="{{courseStudent.biology}}"></label>
+    <label for="absence"><input type="number" name="absence" value="{{courseStudent.absence}}"></label>
+    <label for="student_id"><input type="hidden" name="student_id" value="{{courseStudent.student_id}}"></label>
+    <label for="homework"><input type="number" name="homework" value="{{courseStudent.homework}}"></label>
+    <button type="submit">Update</button> -->
+    <button type="submit">Update</button>
+    </form>
+
+    {{/studentList}}
+
+    <script src="/static/script/main.js"></script>
+</body>
+</html>

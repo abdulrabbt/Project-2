@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="/static/styles/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/admin" method="POST">
+
+        <div class="row">
+                <div class="input-field col s6">
+                        <label for="name"></label><input type="text" name="name" id="name" ></label>
+                        <label for="name">Name</label>
+                </div>
+
+                <div class="input-field col s6">
+                        <label for="email"></label><input type="text" name="email" id="email"></label>
+                        <label for="email">Email</label>
+                </div>
+
+                <div class="input-field col s6">
+                        <label for="phone"></label><input type="number" name="phone" id="phone"></label>
+                        <label for="phone">Phone</label>
+                </div>
+
+                <div class="input-field col s6">
+                        <label for="mathematics"></label><input type="number" name="mathematics" id="mathematics"></label>
+                        <label for="mathematics">Mathematics Grade</label>
+                </div>
+
+                <div class="input-field col s6">
+                    <label for="physics"></label><input type="number" name="physics" id="physics"></label>
+                    <label for="physics">Physics Grade</label>
+                </div>
+                    
+                <div class="input-field col s6">
+                    <label for="chemistry"></label><input type="number" name="chemistry" id="chemistry"></label>
+                    <label for="chemistry">Chemistry Grade</label>
+                </div>
+
+                <div class="input-field col s6">
+                    <label for="biology"></label><input type="number" name="biology" id="biology"></label>
+                    <label for="biology">Biology Grade</label>
+                </div>
+                        
+                <div class="input-field col s6">
+                    <label for="absence"></label><input type="number" name="absence" id="absence"></label>
+                    <label for="absence">Absence Day</label>     
+                </div>
+
+                <div class="input-field col s6">
+                        <label for="homework"></label><input type="number" name="homework" id="homework"></label>
+                        <label for="homework">Missing Homework</label>
+                </div>
+        </div>
+
+        <!-- <label for="name"><input type="text" name="name" id="name" placeholder="Name"></label>
+        <label for="email"><input type="text" name="email" id="email" placeholder="Email"></label>
+        <label for="phone"><input type="number" name="phone" id="phone" placeholder="Phone"></label> -->
+        
+        <!-- <label for="mathematics"><input type="number" name="mathematics" id="mathematics" placeholder="Mathematics Grade"></label>
+        <label for="physics"><input type="number" name="physics" id="physics" placeholder="Physics Grade"></label>
+        <label for="chemistry"><input type="number" name="chemistry" id="chemistry" placeholder="Chemistry Grade"></label>
+        <label for="biology"><input type="number" name="biology" id="biology" placeholder="Biology Grade"></label>
+        <label for="absence"><input type="number" name="absence" id="absence" placeholder="Absence Day"></label>
+        <label for="homework"><input type="number" name="homework" id="homework" placeholder="Missing Homework"></label> -->
+        <button type="submit">New Student</button>
+    </form> 
+   <script src="/static/script/main.js"></script>
+</body>
+</html>
